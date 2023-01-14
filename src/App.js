@@ -5,7 +5,7 @@ import Hey from './Components/Hey';
 
 function App() {
 
-  const [jokes,setJokes]= useState('hey')
+  const [jokes,setJokes]= useState('Loading...')
 
   useEffect(()=>{
       const result=async ()=>{
@@ -26,7 +26,7 @@ function App() {
   // https://api.chucknorris.io/jokes/random
 
   return (
-    <div className="App bg-black h-screen flex flex-col items-center justify-center  px-4">
+    <div className="App bg-gradient-to-t to-green-500 from-purple-500 via-gray-400 h-screen flex flex-col items-center justify-center  px-4">
       
         <p className='text-purple-300 text-7xl font-bold pb-8'>Chucks Jokes</p>
 
